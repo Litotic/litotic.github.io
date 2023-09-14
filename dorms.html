@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+  
+    <title>Dorms of Night Raven College</title>
+    <link href="styles.css" type ="text/css" rel = "stylesheet" />
+</head>
+<!--Page 3: adapted from chapter 7 and 14: dorm registration
+customize the form to fit well within your website.
+ Read chapter 7 on forms before working on this page. -->
+<body>
+    <h1>Dorms</h1>
+    <p>A proud boarding school tradition, each housing dorm upholds a different, distinct
+        history and boasts of a unique, characteristic reputation. <br>Upon admittance and orientation, fresh off the black carriages, students
+        are evaluated by the Dark Mirror, the famous fortune-divining artifact.<br>After being assigned to the dorm supposedly meant to
+        draw out your soul's greatest potential (although, as as modern educational institution, <br>transfers are indeed possible), students
+        continue the rest of orientation in the care of their Dorm Head and Vice Dorm Head and other senior counsel.<br>
+        <br>From students to students, a rich and treasured community is built and passed down. <br>
+    <br> <i>Now... will you be the next to carry the torch?</i>
+     </p>
+
+<figure>
+    <img class = "small" src="Images_assign1/heartslabyul.jpg" alt="" title="Heartslabyul Dorm.">
+<figcaption>
+    <b>Heartslabyul</b> is nestled at the <i>heart</i> of a grand rose maze, which shifts ponderously<br>
+    each witching hour, roots burrowed deep into a lost arcane array fueled by the moon's madness.<br>
+    If you enjoy tea, rules, and time, this is your place.
+    <br>
+<br><i>"Heartslaybul is dedicated to the discipline of the Queen of Hearts."</i>
+</figcaption>
+<p></p>
+</figure>
+<!--Adding a purely cosmetic button here for dorm description expansion; out of time to write more blurbs for each thing
+and actually implement the display hiding. I want to do it next time.-->
+<form>
+    <input type="fake" value="Learned More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/savanaclaw.jpg" alt="" title="Savanaclaw Dorm.">
+<figcaption>
+<br><i><b>"Savanaclaw</b> is dedicated to the perseverance of the King of Beasts."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/octavinelle.jpg" alt="" title="Octavinelle Dorm.">
+<figcaption>
+<br><i><b>"Octavinelle</b> is dedicated to the benevolence of the Sea Witch."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/scarabia.jpg" alt="" title="Scarabia Dorm.">
+<figcaption>
+<br><i><b>"Scarabia</b> is dedicated to the diligence of the Sorceror of the Sands."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/pomefiore.jpg" alt="" title="Pomefiore Dorm.">
+<figcaption>
+<br><i><b>"Pomefiore</b> is dedicated to the tenacity of the Fairest Queen."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/ignihyde.jpg" alt="" title="Ignihyde Dorm.">
+<figcaption>
+<br><i><b>"Ignihyde</b> is dedicated to the diligence of the King of the Underworld."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+<br>
+<figure>
+    <img class = "small" src="Images_assign1/diasomnia.jpg" alt="" title="Diasomnia Dorm.">
+<figcaption>
+<br><i><b>"Diasomnia</b> is dedicated to the nobility of the Witch of Thorns."</i>
+</figcaption>
+<p></p>
+</figure>
+<form>
+    <input type="fake" value="Learn More" id="fake" />
+</form>
+
+<!--Form to enter for dorm mailing list / newsletter-->
+<form action="" method="get">
+    <fieldset>
+        <legend>Sign up for newsletter:</legend>
+        <label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br>
+        <label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br>
+       <br>
+        <label for="signup-year">What student year are you?</label>
+            <select name="year" id="signup-year">
+                <option value="first">First-year</option>
+                <option value="second">Second-year</option>
+                <option value="third">Third-year</option>
+                <option value="fourth">Fourth-year</option>
+                <option value="alum">Alum</option>
+                <option value="other-signup">Other</option>
+            </select>
+            <br>
+            <br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Heartslabyul email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Savanaclaw email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Octavinelle email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Scarabia email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Pomefiore email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Ignihyde email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Diasomnia email updates</label><br>
+        <label><input type="checkbox" name="subscribe" checked="checked"> Student Dormitory Council updates</label><br>
+       
+    </fieldset><br>
+    <fieldset>
+        <legend>Sign up for dorm placement:</legend>
+        <p>
+            <label>Registration Code: <input type="text" name="name" size="30" maxlength="100"></label><br>
+            <label for="registration-type">What kind of registration is this?</label>
+            <select name="registration-type" id="registration-type">
+                <option value="early">Early register</option>
+                <option value="transdorm">Inter-dorm transfer </option>
+                <option value="transchool">Inter-school transfer </option>
+                <option value="find-room">Roommate placement</option>
+                <option value="special">Special accommodations</option>
+                <option value="other-room">Other</option>
+            </select>
+        </p>
+        <p>
+            Would you stay over winter break?<br>
+            <label><input type="radio" name="rating" value="yes"> Yes</label>
+            <label><input type="radio" name="rating" value="no"> No</label>
+            <label><input type="radio" name="rating" value="maybe"> Maybe</label>
+        </p>
+        <p>
+            Would you stay over summer break?<br>
+            <label><input type="radio" name="rating" value="yes"> Yes</label>
+            <label><input type="radio" name="rating" value="no"> No</label>
+            <label><input type="radio" name="rating" value="maybe"> Maybe</label>
+        </p>
+        <p>
+            <label for="comments">Comments:</label><br>
+            <textarea rows="4" cols="40" id="comments"></textarea>
+        </p>
+        <input type="submit" value="Submit review">
+    </fieldset>
+</form>
+
+    <nav>
+        <h3>Navigation Menu</h3>
+        <a href="">Homepage</a>
+        <br><a href="">Classes and Clubs</a>
+        <br><a href="">About NRC and Mailing</a>
+        <p></p>
+        </nav>
+    
+          <!--Add a footer. _copy denotes I just took it from the source example and don't 
+        understand what it's used for yet. 
+        A simple footer can have your name and email. -->
+    <div class="footer">
+        <div class="container_copy">
+            <p class="grid_copy">Questions? Comments? <a href="mailto:melodyta@andrew.cmu.edu" target = "_blank">Contact site admin Melody Tang</a> for more information. | &hearts; &hearts; &hearts; | Night Raven College is a <a href="https://disneytwistedwonderland.com/">copyrighted creation</a> of Aniplex and Walt Disney Japan.</p>
+        </div>
+    </div>
+    </body>
+    </html>
