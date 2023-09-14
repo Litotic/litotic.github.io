@@ -1,96 +1,98 @@
 /*Organize the CSS selectors by section. I am choosing general to specific, 
 like putting <p> that applies to all at the start and then moving into 
-head (and head-specific <p>), body (and body-specific <p>), footer (etc.) etc.).
-Organize selectors by alphabetical order (to the extent possible). 
-Organize your declarations by alphabetical order (PENDING) */
+head (and head-specific <p>), body (and body-specific <p>), footer (etc.) etc.). 
+And then I am organizing selectors by which page / chapter number they first show up in.
+And then, after that, I am sorting them by alphabetical order. 
+I have added several comments explaining my thought process below. 
+(DONE)
+
+Organize your declarations by alphabetical order (DONE) */
 
 /*All images, credit given to royalty-free images website Pexels.com!*/
 
-body{font-family:'Times New Roman', Times, serif;
-    color: #e6c200;
-    background-color: #515151;
+/*body applies to all*/
+body{
     background: repeating-linear-gradient( -45deg,#515151, #333 1px,#e6c200 1px);
+    background-color: #515151;
+    color: #e6c200;
+    font-family:'Times New Roman', Times, serif;
+     }
+
+    /*there are links and paragraphs on every page*/
+    body a{color: lightblue;
+        text-decoration: none;
     }
-    body a{text-decoration: none;
-    color: lightblue}
     /*removing link underline, making links easier to see against dark background*/
-    body p{
+    body p{ color: lightgray;
         margin-left: 35px;
-        color: lightgray;
     }
 
 
-    /*footers show up each page*/
+    /*footers show up each page, and div is after body in alphabet*/
 div.footer {
-    text-align: center;
+    background: repeating-linear-gradient( 45deg,#333, black 1px, lightgray 1px);
     border: 2px solid lightgray;
     border-radius: 5px;
-    background: repeating-linear-gradient( 45deg,#333, black 1px, lightgray 1px);
-}
-
-/*images show up in page 1, page 4*/
-img.small{
-    min-height: 300px;
-    max-height: 300px;
-    max-width: 30%;
-    box-sizing: border-box
-}
-
-img.large{
-    max-height: 500px;
-    max-width: 80%;
-    box-sizing: border-box
+    text-align: center;
 }
 
 /*figures show up in page 1, page 4*/
-figcaption{
-font-family: 'Satisfy', cursive;
-color: lightgray;
+figcaption{color: lightgray;
+    font-family: 'Satisfy', cursive;
+    }
+    figcaption::first-letter{
+        font-size: 120%;
+        text-indent: 50px
+    }
+
+/*images show up in page 1, page 4*/
+img.large{box-sizing: border-box;
+    max-height: 500px;
+    max-width: 80%;
 }
-figcaption::first-letter{
-    font-size: 120%;
-    text-indent: 50px
+img.small{box-sizing: border-box;
+    max-height: 300px;
+    min-height: 300px;
+    max-width: 30%;
 }
 
-/*Tables show up in page 3*/
-table {
-    width:90%;
- padding: 30px;
- border: 3px dotted #e6c200;
- border-radius: 25px;
-margin-left: 3%;
-margin-right: 3%;
-background-color: #333;
-background: repeating-linear-gradient( 45deg,#333, black 1px, lightgray 1px);
-}
 /*Tables show up in page 3*/
 fieldset{
     background: repeating-linear-gradient( 45deg,#333, black 1px, lightgray 1px); 
 }
 /*Buttons show up in page 3*/
-input#fake {
-    font-size: 120%;
-    color: #e6c200;
-    text-shadow: 0px 1px 1px #ffffff;
-    border-bottom: 2px solid #b2b2b2;
-    background-color: #333;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
-    background-repeat: no-repeat;
+input#fake { background-color: #333;
     background-position: 8px 9px;
+    background-repeat: no-repeat;
+    border: 1px solid #bdbdbd;
+    border-bottom: 2px solid #b2b2b2;
+    border-radius: 5px;
+    color: #e6c200; 
     display: block;
+    font-size: 120%;
     margin-bottom: 10px;
-    margin-left: 35px}
+    margin-left: 35px;
+    padding: 5px 10px 5px 10px; 
+    text-shadow: 0px 1px 1px #ffffff;
+   }
 input#fake:hover {
-    color: #e6c200;
+    background-color: #333;
     border: 1px solid #a4a4a4;
     border-top: 2px solid #b2b2b2;
-    background-color: #333;}
+    color: #e6c200;}
 
+/*Tables show up in page 3*/
+table {background: repeating-linear-gradient( 45deg,#333, black 1px, lightgray 1px);
+    background-color: #333; 
+    border: 3px dotted #e6c200;
+    border-radius: 25px;
+    margin-left: 3%;
+margin-right: 3%;
+ padding: 30px; 
+ width:90%;
 
-    /* Could not get the andrew id domain publishing to work (the terminal guide worked up until Fetch 
-    download, Fetch is Mac-exclusive.*/
+}
+
 
 
 /*All pages: Add a consistent navbar (navigation menu) across all pages of your website. (DONE)
@@ -98,7 +100,7 @@ Be consistent and succinct with navigation labels. (DONE)
 Personalize the text (DONE)
 Change the background color and add borders for the table (DONE)
 Add a footer. Center the footer text and images. (DONE)
-Add a navbar that links to the other pages. (WORKING)
+Add a navbar that links to the other pages. (DONE)
 Customize the map (DONE)
 Change the background color for the form. (DONE)
 Make sure to add comments to different sections of the code to explain the content. (DONE)*/
